@@ -1,0 +1,68 @@
+.skills {
+    width: 150px;
+    height: 150px;
+    background: none;
+    position: relative;
+  }
+  
+  .skills::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid #eee;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .skills>span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .skills .skills-left {
+    left: 0;
+  }
+  
+  .skills .skills-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 6px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+  }
+  
+  .skills .skills-left .skills-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    transform-origin: center left;
+  }
+  
+  .skills .skills-right {
+    right: 0;
+  }
+  
+  .skills .skills-right .skills-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    transform-origin: center right;
+  }
+  
+  .skills .skills-value {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  
